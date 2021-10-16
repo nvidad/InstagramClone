@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCaptureImage;
     private ImageView ivPostImage;
     private Button btnSubmit;
+
     private File photoFile;
     final String photoFileName = "photo.jpg";
 
@@ -155,6 +157,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void savePost(String description, ParseUser currentUser, File photoFile) {
+
+        ProgressBar pbLoading = (ProgressBar) findViewById(R.id.pbLoading);
+        pbLoading.setVisibility(ProgressBar.VISIBLE);
+
         Post post = new Post();
         post.setDescription(description);
         post.setImage(new ParseFile(photoFile));
@@ -171,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 ivPostImage.setImageResource(0);
             }
         });
+        pbLoading.setVisibility(ProgressBar.INVISIBLE);
     }
 
     private void queryPosts() {
