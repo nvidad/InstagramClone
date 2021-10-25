@@ -1,4 +1,31 @@
-# Project 3 - *InstagramClone*
+# Project 3 - *InstagramClone Part 2*
+
+**InstagramClone** is a photo sharing app similar to Instagram but using Parse as its backend.
+
+Time spent: **5** hours spent in total
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can view the last 20 posts submitted to "Instagram".
+- [x] The user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View. (2 points)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram".
+
+The following **optional** features are implemented:
+
+- [x] User sees app icon in home screen and styled bottom navigation view
+- [x] Show the username and creation time for each post.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://github.com/nvidad/InstagramClone/blob/master/walkthrough-2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+# Project 3 - *InstagramClone Part 1*
 
 **InstagramClone** is a photo sharing app similar to Instagram but using Parse as its backend.
 
